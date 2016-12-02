@@ -1,0 +1,38 @@
+
+```
+<?
+function xor_encrypt($in) {
+    $key = 'qw8J';
+    $text = $in;
+    $outText = '';
+
+    // Iterate through each character
+    for($i=0;$i<strlen($text);$i++) {
+    $outText .= $text[$i] ^ $key[$i % strlen($key)];
+    }
+
+    return $outText;
+}
+
+
+function xor_encrypt2($in1, $in2) {
+    $outText = '';
+
+    // Iterate through each character
+    for($i=0;$i<strlen($in1);$i++) {
+    $outText .= $in1[$i] ^ $in2[$i];
+    }
+
+    return $outText;
+}
+$var1 = "ClVLIh4ASCsCBE8lAxMacFMZV2hdVVotEhhUJQNVAmhSEl0vFBJdaAw=";
+$var2 = "{\"showpassword\":\"no\",\"bgcolor\":\"#eeeeee\"}";
+$var3 = "{\"showpassword\":\"yes\",\"bgcolor\":\"#eeeeee\"}"
+echo xor_encrypt2(base64_decode($var1), $var2);
+echo "\n\n"
+echo base64_encode(xor_encrypt($var3));
+?>
+```
+
+http://natas12.natas.labs.overthewire.org/
+EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3
